@@ -39,7 +39,7 @@ public:
 
 MYSQL* connectDatabase() {
     MYSQL* conn = mysql_init(0);
-    conn = mysql_real_connect(conn, "localhost", "root", "Hardik@2511", "online_shopping", 3306, NULL, 0);
+    conn = mysql_real_connect(conn, "localhost", "root", "your_password", "online_shopping", 3306, NULL, 0);
     if (conn) {
         cout << "Connected to MySQL successfully!\n";
     } else {
